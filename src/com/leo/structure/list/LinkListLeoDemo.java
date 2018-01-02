@@ -12,12 +12,13 @@ public class LinkListLeoDemo {
         linkListLeo.add("two");
         linkListLeo.add("three");
         linkListLeo.add("four");
-        System.out.println(linkListLeo.remove(0));
+//        System.out.println(linkListLeo.remove(0));
+//        System.out.println(linkListLeo.toString());
+//        linkListLeo.clear();
+//        System.out.println(linkListLeo.size());
         System.out.println(linkListLeo.toString());
-        linkListLeo.clear();
-        System.out.println(linkListLeo.size());
+        linkListLeo.add(3,"leo");
         System.out.println(linkListLeo.toString());
-
 //        System.out.println(linkListLeo.toString());
 //        System.out.println(linkListLeo.size());
 //        System.out.println(linkListLeo.add(3,"leo"));
