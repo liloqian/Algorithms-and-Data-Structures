@@ -1,0 +1,50 @@
+package com.leo.sword.problem.problem21;
+
+import java.util.Stack;
+
+/**
+ * @Author: qian
+ * @Description: 定义栈的数据结构，请在该类型中实现一个能够得到栈最小元素的min函数
+ * @Date: Created in 10:09 2018/2/7
+ **/
+public class Solution {
+
+   Stack<Integer> data = new Stack<>();
+   Stack<Integer> min = new Stack<>();
+   Integer temp = null;
+
+    public void push(int node) {
+        if (temp != null) {
+            if (node <= temp) {
+                temp = node;
+                min.push(node);
+            }
+            data.push(node);
+        }else {
+            temp = node;
+            data.push(node);
+            min.push(node);
+        }
+    }
+
+    public void pop() {
+        int num = data.pop();
+        int num2 = min.pop();
+        if (num != num2) {
+            min.push(num2);
+        }
+    }
+
+    public int top() {
+        int num = data.pop();
+        data.push(num);
+        return num;
+    }
+
+    public int min() {
+        int num = min.pop();
+        min.push(num);
+        return num;
+    }
+
+}

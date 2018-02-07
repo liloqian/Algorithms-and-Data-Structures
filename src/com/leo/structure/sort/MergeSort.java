@@ -11,6 +11,7 @@ public class MergeSort {
      * 合并两个数组
      * */
     private static void mergeArray(int[] datas,int first,int mid,int last,int[] temp){
+        // i-m  j-n
         int i = first,j = mid+1;
         int m =mid,   n = last;
 
