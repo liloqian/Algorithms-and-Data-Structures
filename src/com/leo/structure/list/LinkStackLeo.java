@@ -35,7 +35,6 @@ public class LinkStackLeo<T> {
         addNew.next = top;
         mSize++;
     }
-
     /**
      * 出栈一个元素
      * */

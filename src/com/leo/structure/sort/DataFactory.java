@@ -1,5 +1,7 @@
 package com.leo.structure.sort;
 
+import java.util.Random;
+
 /**
  * @Author: qian
  * @Description

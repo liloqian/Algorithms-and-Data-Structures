@@ -12,7 +12,7 @@ public class FindKthToTail {
      * 占用内存：8828k
      * */
     public static ListNode FindKthToTail(ListNode head,int k) {
-        if (head == null || k == 0) {
+        if (head == null || k <= 0) {
             return null;
         }
         ListNode first,second;

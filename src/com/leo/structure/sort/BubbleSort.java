@@ -33,7 +33,6 @@ public class BubbleSort {
                     isOk = true;
                 }
             }
-            DataFactory.printArr(datas);
         }
     }
 
@@ -43,8 +42,8 @@ public class BubbleSort {
         int[] datas = DataFactory.getData();
         DataFactory.printArr(datas);
         System.out.println("----");
-//        bubbleSortBased(datas);
-        bubbleSortAdvanced(datas);
+        bubbleSortBased(datas);
+//        bubbleSortAdvanced(datas);
         DataFactory.printArr(datas);
     }
 

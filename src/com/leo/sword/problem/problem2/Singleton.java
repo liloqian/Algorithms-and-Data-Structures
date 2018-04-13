@@ -1,6 +1,9 @@
 package com.leo.sword.problem.problem2;
 
 
+import java.util.HashSet;
+import java.util.concurrent.Executors;
+
 /**
  * @Author: qian
  * @Description: 单例模式，懒汉式
@@ -9,9 +12,7 @@ package com.leo.sword.problem.problem2;
 public class Singleton {
 
     private static Singleton instance = null;
-
     private Singleton(){ }
-
     /**懒汉式，线程不安全*/
     public static Singleton getInstanceLazyManDanger(){
         if(instance == null){

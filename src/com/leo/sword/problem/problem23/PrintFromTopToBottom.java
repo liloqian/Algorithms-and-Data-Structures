@@ -2,6 +2,7 @@ package com.leo.sword.problem.problem23;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Queue;
 
 /**
@@ -10,7 +11,6 @@ import java.util.Queue;
  * @Date: Created in 11:13 2018/2/7
  **/
 public class PrintFromTopToBottom {
-
     /**
      * 运行时间：18ms
      * 占用内存：8684k

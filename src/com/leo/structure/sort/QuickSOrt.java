@@ -39,7 +39,6 @@ public class QuickSOrt {
     public static void main(String[] args) {
         int[] data = DataFactory.getData();
         DataFactory.printArr(data);
-
         quickSort(data,0,data.length-1);
 
         DataFactory.printArr(data);

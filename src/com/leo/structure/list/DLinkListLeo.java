@@ -1,7 +1,5 @@
 package com.leo.structure.list;
 
-import java.util.LinkedList;
-
 /**
  * @Author: qian
  * @Description
@@ -9,7 +7,7 @@ import java.util.LinkedList;
  **/
 public class DLinkListLeo<T> {
 
-    private class Node<T>{
+    class Node<T>{
         T data;
         Node<T> prior;
         Node<T> next;

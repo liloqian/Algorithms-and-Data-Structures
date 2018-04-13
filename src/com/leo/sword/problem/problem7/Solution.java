@@ -10,8 +10,8 @@ import java.util.Stack;
  * @Date: Created in 17:25 2018/2/1
  **/
 public class Solution {
-    Stack<Integer> stack1 = new Stack<Integer>();
-    Stack<Integer> stack2 = new Stack<Integer>();
+    Stack<Integer> stack1 = new Stack<Integer>();   //压入
+    Stack<Integer> stack2 = new Stack<Integer>();   //弹出
 
     public void push(int node) {
         if(stack2.size() == 0){

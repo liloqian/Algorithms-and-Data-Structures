@@ -10,7 +10,7 @@ public class LinkListLeo<T> {
      * @T 数据域
      * @nextNode 指针域
      * */
-    private static class Node<T>{
+     class Node<T>{
         public T data;
         public Node<T> nextNode;
 
