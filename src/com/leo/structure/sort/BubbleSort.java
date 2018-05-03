@@ -38,13 +38,15 @@ public class BubbleSort {
 
 
 
+
     public static void main(String[] args) {
         int[] datas = DataFactory.getData();
         DataFactory.printArr(datas);
         System.out.println("----");
-        bubbleSortBased(datas);
-//        bubbleSortAdvanced(datas);
+//        bubbleSortBased(datas);
+        bubbleSortAdvanced(datas);
         DataFactory.printArr(datas);
     }
+
 
 }

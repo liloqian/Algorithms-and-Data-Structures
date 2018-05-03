@@ -2,7 +2,7 @@ package com.leo.sword.problem.problem50;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: https://www.nowcoder.com/practice/1277c681251b4372bdef344468e4f26e?tpId=13&tqId=11202&tPage=3&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 11:49 2018/3/24
  **/
 public class StringTransfer {

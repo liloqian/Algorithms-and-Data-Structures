@@ -6,11 +6,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: https://www.nowcoder.com/practice/445c44d982d04483b04a54f298796288?tpId=13&tqId=11213&tPage=3&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 18:25 2018/3/25
  **/
 public class LayerTraverseTree {
-    // 测序遍历
+    // 层序遍历
     ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
         ArrayList<ArrayList<Integer>> retList = new ArrayList<>();
         if  (pRoot == null) {
@@ -18,7 +18,6 @@ public class LayerTraverseTree {
         }
         Queue<TreeNode> queue = new LinkedBlockingQueue<>();
         queue.add(pRoot);
-
 
         while (true) {
             if (queue.size() > 0) {

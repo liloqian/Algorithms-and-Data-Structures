@@ -30,6 +30,16 @@ public class ReverseList {
         return currentPre;
     }
 
+    private static ListNode reverseListNodeByRecursion(ListNode listNode) {
+        if (listNode.next == null) {
+            return listNode;
+        }
+        ListNode nextReverse = reverseListNodeByRecursion(listNode.next);
+        listNode.next = null;
+        nextReverse.next = listNode;
+        return listNode;
+    }
+
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(2);
@@ -43,7 +53,9 @@ public class ReverseList {
         listNode4.next = listNode5;
 
 
-        System.out.println(ReverseList(listNode1));
+//        System.out.println(ReverseList(listNode1));
+        reverseListNodeByRecursion(listNode1);
+        System.out.println(listNode5);
 //        ListNode listNode = ReverseList(listNode1);
 //        printNode(listNode);
 

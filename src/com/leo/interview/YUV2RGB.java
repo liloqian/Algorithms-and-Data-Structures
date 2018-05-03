@@ -9,7 +9,7 @@ import java.util.Vector;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: YUV转成RGB
  * @Date: Created in 10:17 2018/3/12
  **/
 public class YUV2RGB {

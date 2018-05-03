@@ -2,7 +2,7 @@ package com.leo.sword.problem.problem10;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: 输入一个整数，输出该数二进制表示中1的个数
  * @Date: Created in 16:31 2018/2/2
  **/
 public class OneNumber {
@@ -23,7 +23,7 @@ public class OneNumber {
         return ret;
     }
 
-    private static int getOneNumberInNumberComplext(int num){
+    private static int getOneNumberInNumberComplex(int num){
         int count = 0;
         while (num != 0){
             count++;
@@ -34,6 +34,6 @@ public class OneNumber {
 
     public static void main(String[] args) {
         System.out.println(getOneNumberInNumber(1000));
-        System.out.println(getOneNumberInNumberComplext(1000));
+        System.out.println(getOneNumberInNumberComplex(1000));
     }
 }

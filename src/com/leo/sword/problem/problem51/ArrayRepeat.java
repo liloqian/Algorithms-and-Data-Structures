@@ -2,7 +2,7 @@ package com.leo.sword.problem.problem51;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=3&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 15:39 2018/3/24
  **/
 public class ArrayRepeat {

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author: qian
- * @Description
+ * @Description： https://www.nowcoder.com/practice/9be0172896bd43948f8a32fb954e1be1?tpId=13&tqId=11216&tPage=4&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 19:11 2018/3/25
  **/
 public class DataMidBit {

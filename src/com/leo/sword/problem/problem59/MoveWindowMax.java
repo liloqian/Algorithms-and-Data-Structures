@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&tqId=11217&tPage=4&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 19:44 2018/3/25
  **/
 public class MoveWindowMax {
@@ -21,7 +21,7 @@ public class MoveWindowMax {
         }
         int retSize = num.length - size;
         for (int i = 0 ; i <= retSize ; i++) {
-            retList.add(getMaxCore(datas.subList(i,size+i)));
+            retList.add(getMaxCore(datas.subList(i,size+i))); //subX 函数带start节点，不带end节点
         }
         return retList;
     }

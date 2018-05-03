@@ -19,6 +19,7 @@ public class SumEqualS {
             for (int j = i + 1 ; j < array.length && array[j] <= temp; j++) {
                 if (array[j] == temp) {
                     list.add(new Point(array[i], array[j]));
+                    break;
                 }
             }
         }
@@ -43,6 +44,7 @@ public class SumEqualS {
 
         return ret;
     }
+
 
     class Point {
         int x;

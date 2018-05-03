@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: https://www.nowcoder.com/practice/91b69814117f4e8097390d107d2efbe0?tpId=13&tqId=11212&tPage=3&rp=3&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
  * @Date: Created in 20:44 2018/3/25
  **/
 public class ZPrintTree {
@@ -19,6 +19,7 @@ public class ZPrintTree {
         }
         Queue<TreeNode> queue = new LinkedBlockingQueue<>();
         queue.add(pRoot);
+
 
         boolean flag = true;
         while (queue.size() > 0) {

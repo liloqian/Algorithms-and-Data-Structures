@@ -1,8 +1,5 @@
 package com.leo.structure.sort;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 /**
  * @Author: qian
  * @Description
@@ -55,9 +52,8 @@ public class MergeSort {
         int[] datas = DataFactory.getData();
         int[] temp = new int[datas.length];
         DataFactory.printArr(datas);
-
         mergeSort(datas, 0 , datas.length - 1 , temp);
-
         DataFactory.printArr(datas);
     }
+
 }

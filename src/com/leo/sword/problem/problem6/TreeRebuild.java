@@ -22,15 +22,12 @@ public class TreeRebuild {
         TreeNode rootTree = null;
         if(pre.length != 0 && in.length != 0 ){
             rootTree = new TreeNode(pre[0]);
-            //root节点的值在中序遍历数组的下标
-            int rootIndex = -1;
             //中序遍历判断root节点左右的元素数目
             int leftNumber = 0;
             for(int i = 0 ; i < in.length ;i++){
                 if(in[i] != pre[0]){
                     leftNumber++;
                 }else {
-                    rootIndex = i;
                     break;
                 }
             }
@@ -68,9 +65,5 @@ public class TreeRebuild {
         }
 
         return null;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

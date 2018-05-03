@@ -10,30 +10,30 @@ import java.util.Stack;
  * @Date: Created in 17:25 2018/2/1
  **/
 public class Solution {
-    Stack<Integer> stack1 = new Stack<Integer>();   //压入
-    Stack<Integer> stack2 = new Stack<Integer>();   //弹出
+    Stack<Integer> stackPush = new Stack<Integer>();   //压入
+    Stack<Integer> stackPop = new Stack<Integer>();   //弹出
 
     public void push(int node) {
-        if(stack2.size() == 0){
-            stack1.push(node);
+        if(stackPop.size() == 0){
+            stackPush.push(node);
         }else {
-            int size = stack2.size();
+            int size = stackPop.size();
             for (int i = 0; i < size; i++) {
-                stack1.push(stack2.pop());
+                stackPush.push(stackPop.pop());
             }
-            stack1.push(node);
+            stackPush.push(node);
         }
     }
 
     public int pop() {
-        if(stack1.size() == 0){
-            return stack2.pop();
+        if(stackPush.size() == 0){
+            return stackPop.pop();
         }else {
-            int size = stack1.size();
+            int size = stackPush.size();
             for(int i = 0 ; i < size ;i++){
-                stack2.push(stack1.pop());
+                stackPop.push(stackPush.pop());
             }
-            return stack2.pop();
+            return stackPop.pop();
         }
     }
 

@@ -28,4 +28,5 @@ public class SimpleChoiceSort {
         simpleChoiceSort(datas);
         DataFactory.printArr(datas);
     }
+
 }

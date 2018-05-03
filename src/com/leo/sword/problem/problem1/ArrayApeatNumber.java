@@ -16,13 +16,13 @@ public class ArrayApeatNumber {
     /**
      * 先排序  在判断
      * */
-    public static List apeatNumber(int[] arr){
+    public static List repeatNumberOfTwoByPower(int[] arr){
         // 排序 插入排序
         insertSort(arr);
         DataFactory.printArr(arr);
         // 判断
         HashSet<Integer> set = new HashSet<>();
-        for (int i = 1; i < arr.length-1;i++) {
+        for (int i = 1; i <= arr.length-1;i++) {
             if (arr[i] == arr[i-1] ) {
                 set.add(arr[i]);
             }
@@ -46,12 +46,15 @@ public class ArrayApeatNumber {
     public static void main(String[] args) {
         int[] arr = new int[]{2,3,1,0,5,3,2,2};
 
-//        System.out.println(apeatNumber(arr));
+        System.out.println(repeatNumberOfTwoByPower(arr));
         
-        System.out.println(appeatNumberTwo(arr));
+        System.out.println(repeatNumberTwoByHash(arr));
     }
 
-    private static List appeatNumberTwo(int[] arr) {
+    /**
+     * 数组建立哈希表的思想
+     * */
+    private static List repeatNumberTwoByHash(int[] arr) {
         // 找到最大值
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {

@@ -21,6 +21,6 @@ public class ReverseStr {
     }
 
     public static void main(String[] args) {
-        System.out.println(new ReverseStr().ReverseSentence(" "));
+        System.out.println(new ReverseStr().ReverseSentence("I am a student "));
     }
 }

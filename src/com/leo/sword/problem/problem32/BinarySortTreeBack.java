@@ -10,14 +10,14 @@ import java.util.List;
  **/
 public class BinarySortTreeBack {
     //找规律
-    public boolean VerifySquenceOfBST(int [] sequence) {
+    public boolean VerifySequenceOfBST(int [] sequence) {
        if (sequence.length == 0){
            return false;
        }
-       return VerifySquenceOfBSTCore(sequence);
+       return VerifySequenceOfBSTCore(sequence);
     }
 
-    private boolean VerifySquenceOfBSTCore(int[] sequence) {
+    private boolean VerifySequenceOfBSTCore(int[] sequence) {
         if (sequence.length == 0) {
             return true;
         }
@@ -43,8 +43,8 @@ public class BinarySortTreeBack {
         }
 
         //转化为数组
-        return VerifySquenceOfBSTCore(convertListToArray(left))
-                && VerifySquenceOfBSTCore(convertListToArray(right));
+        return VerifySequenceOfBSTCore(convertListToArray(left))
+                && VerifySequenceOfBSTCore(convertListToArray(right));
     }
 
     private int[] convertListToArray(List<Integer> lists){
@@ -57,6 +57,6 @@ public class BinarySortTreeBack {
 
     public static void main(String[] args) {
         int[] test = new int[]{4,8,6,12,16,14,10};
-        new BinarySortTreeBack().VerifySquenceOfBST(test);
+        new BinarySortTreeBack().VerifySequenceOfBST(test);
     }
 }

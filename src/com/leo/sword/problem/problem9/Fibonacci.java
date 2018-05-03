@@ -11,14 +11,14 @@ public class Fibonacci {
      * 运行时间：1546ms
      * 占用内存：8604k
      * */
-    private static long FibonacciRecuision(int n){
+    private static long FibonacciRecursion(int n){
         if(n <= 0){
             return 0;
         }
         if(n == 1){
             return 1;
         }
-        return FibonacciRecuision(n-1)+FibonacciRecuision(n-2);
+        return FibonacciRecursion(n-1)+ FibonacciRecursion(n-2);
     }
 
     /**
@@ -41,11 +41,10 @@ public class Fibonacci {
             second = temp;
         }
         return second;
-
     }
 
     public static void main(String[] args) {
-//        System.out.println(FibonacciRecuision(100));
+//        System.out.println(FibonacciRecursion(100));
         System.out.println(Fibonacci(100));
     }
 

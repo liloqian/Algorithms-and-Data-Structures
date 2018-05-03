@@ -1,9 +1,5 @@
 package com.leo.sword.problem.problem2;
 
-
-import java.util.HashSet;
-import java.util.concurrent.Executors;
-
 /**
  * @Author: qian
  * @Description: 单例模式，懒汉式

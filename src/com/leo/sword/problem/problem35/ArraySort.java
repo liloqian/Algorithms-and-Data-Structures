@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @Author: qian
- * @Description
+ * @Description: 把数组排成最小的数字
  * @Date: Created in 11:42 2018/3/23
  **/
 public class ArraySort {
