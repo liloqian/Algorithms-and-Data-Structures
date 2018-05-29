@@ -87,7 +87,9 @@ public class Traverse {
 
 }
 
-class NodeGraph {
+class
+
+NodeGraph {
     int label;
     ArrayList<NodeGraph> neighbors;
 
