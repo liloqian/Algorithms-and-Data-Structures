@@ -34,9 +34,9 @@
 33 模拟 pascals-triangle
 34 树 populating-next-right-pointers-in-each-node-ii
 35 树 populating-next-right-pointers-in-each-node
-36
-37
-38
+36 动态规划
+37 树 path-sum-ii
+38 树 path-sum
 39
 40
 41
