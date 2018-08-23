@@ -7,26 +7,40 @@ package com.leo.structure.sort;
  **/
 public class SimpleChoiceSort {
 
-    private static void simpleChoiceSort(int[] datas){
-        int tempMin ;
-        for(int i = 0 ;i < datas.length - 1;i++){
-            tempMin = i;
-            for(int j = i+1 ; j < datas.length ;j++){
-                if(datas[tempMin] > datas[j]){
-                    tempMin = j;
-                }
-            }
-            if(tempMin != i){
-                DataFactory.swap(datas,i,tempMin);
-            }
-        }
-    }
+//    private static void simpleChoiceSort(int[] datas){
+//        int tempMin ;
+//        for(int i = 0 ;i < datas.length - 1;i++){
+//            tempMin = i;
+//            for(int j = i+1 ; j < datas.length ;j++){
+//                if(datas[tempMin] > datas[j]){
+//                    tempMin = j;
+//                }
+//            }
+//            if(tempMin != i){
+//                DataFactory.swap(datas,i,tempMin);
+//            }
+//        }
+//    }
 
     public static void main(String[] args) {
         int[] datas = DataFactory.getData();
         DataFactory.printArr(datas);
         simpleChoiceSort(datas);
         DataFactory.printArr(datas);
+    }
+
+    private static void simpleChoiceSort(int[] datas) {
+        for (int i = 0 ; i < datas.length - 1; i++) {
+            int tempMin = i;
+            for (int j = i + 1; j < datas.length ; j++) {
+                if (datas[tempMin] > datas[j]) {
+                    tempMin = j;
+                }
+            }
+            if (tempMin != i) {
+                DataFactory.swap(datas, tempMin, i);
+            }
+        }
     }
 
 }

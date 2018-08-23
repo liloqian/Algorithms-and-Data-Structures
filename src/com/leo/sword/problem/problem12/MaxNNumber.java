@@ -1,5 +1,8 @@
 package com.leo.sword.problem.problem12;
 
+import java.util.Collections;
+import java.util.HashSet;
+
 /**
  * @Author: qian
  * @Description: 输入数字n，按顺序打印从1最大的n位十进制数字，比如输入3，打印出1、2、3...999
@@ -48,7 +51,45 @@ public class MaxNNumber {
         }
     }
 
+
+
+    public boolean isNumeric(char[] str) {
+        String string = String.valueOf(str);
+        return string.matches("[+-]?[0-9]*(\\.[0-9]*)?([eE][+-]?[0-9]+)?");
+    }
+
     public static void main(String[] args) {
-        printMaxNNumber(3);
+//        printMaxNNumber(3);
+
+        int[] arr = new int[2];
+        System.out.println(arr);
+
+//        String str = "123";
+//        char[] arr = str.toCharArray();
+//        HashSet<String> set = new HashSet<>();
+//
+//        perm(set, arr , 0);
+//
+//        System.out.println(set);
+    }
+
+    private static void perm(HashSet<String> set, char[] arr, int index) {
+
+        if (index == arr.length) {
+            set.add(new String(arr));
+        }
+        for (int i = index ; i < arr.length ; i++) {
+            swap(arr,i,index);
+            perm(set, arr, index+1);
+            swap(arr,i,index);
+        }
+    }
+
+    private static void swap(char[] arr, int i, int j) {
+        if (i != j) {
+            char temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
     }
 }

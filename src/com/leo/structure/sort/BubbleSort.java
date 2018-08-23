@@ -20,6 +20,16 @@ public class BubbleSort {
         }
     }
 
+    private static void bubbleSort(int[] datas){
+        for (int i = 0 ; i < datas.length ;i++) {
+            for (int j = datas.length - 1 ; j > i ; j--) {
+                if (datas[j] < datas[j-1]) {
+                    DataFactory.swap(datas,j,j-1);
+                }
+            }
+        }
+    }
+
     /**
      * 改进版本,针对2,1,3,4,5,6,7,9,8 解决类似这种情况
      * */
@@ -44,7 +54,8 @@ public class BubbleSort {
         DataFactory.printArr(datas);
         System.out.println("----");
 //        bubbleSortBased(datas);
-        bubbleSortAdvanced(datas);
+//        bubbleSortAdvanced(datas);
+        bubbleSort(datas);
         DataFactory.printArr(datas);
     }
 

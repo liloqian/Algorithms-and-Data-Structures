@@ -92,9 +92,26 @@ public class TreeOfCommon<T> {
 
     }
 
-    /**
-     * 非递归中序
-     * */
+    private static void preOrderWithStackBg(Node root) {
+        Stack<Node> stack = new Stack<>();
+        Node pNode = root;
+        while (pNode != null || stack.size() > 0) {
+            while (pNode  != null) {
+                printCurrent(pNode);
+                stack.push(pNode);
+                pNode = pNode.getLeft();
+            }
+
+            if (stack.size() > 0) {
+                pNode = stack.pop();
+                pNode = pNode.getRight();
+            }
+        }
+    }
+
+        /**
+         * 非递归中序
+         * */
     private static void minOrderWithStack(Node root){
         Stack<Node> stack = new Stack<>();
         Node pNode = root;
@@ -150,6 +167,13 @@ public class TreeOfCommon<T> {
         System.out.println();
         preOrderWithStack(list.get(0));
         System.out.println();
+
+        System.out.println("前序");
+        preOrder(list.get(0));
+        System.out.println();
+        preOrderWithStackBg(list.get(0));
+        System.out.println();
+
 
         System.out.println("中序");
         midOrder(list.get(0));

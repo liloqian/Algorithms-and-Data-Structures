@@ -55,7 +55,7 @@ public class Traverse {
         list.add(root);
         for (NodeGraph node : root.neighbors) {
             if (!list.contains(node)) {
-                list.add(node);
+//                list.add(node);
                 coreDfs(node,list);
             }
         }
@@ -68,28 +68,49 @@ public class Traverse {
         if (root == null) {
             return;
         }
-        System.out.print(root.label+" ");
+
         LinkedList<NodeGraph> queue = new LinkedList<>();
-        queue.offer(root);
-        ArrayList<NodeGraph> listFlag = new ArrayList<>();
-        listFlag.add(root);
-        while (!queue.isEmpty()) {
+        queue.add(root);
+        System.out.print(root.label+" ");
+        ArrayList<NodeGraph> flag = new ArrayList<>();
+        flag.add(root);
+        while (!queue.isEmpty()){
             NodeGraph current = queue.poll();
-            for(NodeGraph node : current.neighbors) {
-                if (!listFlag.contains(node)) {
+            for (NodeGraph node : current.neighbors) {
+                if(!flag.contains(node)) {
+                    flag.add(node);
                     System.out.print(node.label+" ");
-                    listFlag.add(node);
                     queue.offer(node);
                 }
             }
         }
+
+
+
+//        if (root == null) {
+//            return;
+//        }
+//        System.out.print(root.label+" ");
+//        LinkedList<NodeGraph> queue = new LinkedList<>();
+//        queue.offer(root);
+//        ArrayList<NodeGraph> listFlag = new ArrayList<>();
+//        listFlag.add(root);
+//        while (!queue.isEmpty()) {
+//            NodeGraph current = queue.poll();
+//            for(NodeGraph node : current.neighbors) {
+//                if (!listFlag.contains(node)) {
+//                    System.out.print(node.label+" ");
+//                    listFlag.add(node);
+//                    queue.offer(node);
+//                }
+//            }
+//        }
+
     }
 
 }
 
-class
-
-NodeGraph {
+class NodeGraph {
     int label;
     ArrayList<NodeGraph> neighbors;
 
